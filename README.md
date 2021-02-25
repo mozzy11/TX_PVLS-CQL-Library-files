@@ -1,4 +1,4 @@
-# PLIR_CQL_files
+# PLIR CQL Library files
 
 Tgis repository contains the sample PLIR cql librarry and measure for PLIR
 
