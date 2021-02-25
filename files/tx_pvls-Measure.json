@@ -1,0 +1,67 @@
+{
+    "resourceType": "Measure",
+    "id": "TX-PVLS",
+    "meta": {
+        "versionId": "6",
+        "lastUpdated": "2021-02-25T10:10:02.455+03:00",
+        "source": "#CbnB6oxhuQu2HZqo"
+    },
+    "status": "active",
+    "experimental": true,
+    "library": [
+        "Library/TX-PVLS"
+    ],
+    "scoring": {
+        "coding": [
+            {
+                "code": "proportion"
+            }
+        ]
+    },
+    "group": [
+        {
+            "id": "population",
+            "population": [
+                {
+                    "code": {
+                        "coding": [
+                            {
+                                "code": "initial-population"
+                            }
+                        ]
+                    },
+                    "criteria": {
+                        "language": "text/cql",
+                        "expression": "Initial Population"
+                    }
+                },
+                {
+                    "code": {
+                        "coding": [
+                            {
+                                "code": "denominator"
+                            }
+                        ]
+                    },
+                    "criteria": {
+                        "language": "text/cql",
+                        "expression": "Denominator"
+                    }
+                },
+                {
+                    "code": {
+                        "coding": [
+                            {
+                                "code": "numerator"
+                            }
+                        ]
+                    },
+                    "criteria": {
+                        "language": "text/cql",
+                        "expression": "Numerator"
+                    }
+                }
+            ]
+        }
+    ]
+}
