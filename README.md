@@ -1,4 +1,4 @@
-# TX_PVLS CQL Library files
+# TX_PVLS CQL Library files (WIP)
 
 This repository contains the sample cql library Reaource and measure Resource for Calculation of the TX_PVLS indicator for PLIR
 
