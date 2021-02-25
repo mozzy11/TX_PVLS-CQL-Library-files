@@ -11,7 +11,6 @@ code "Viral Load Quantitative": '856' from "CIEL" display 'HIV viral load'
 code "Viral Load Qualitative": '1305' from "CIEL" display 'HIV VIRAL LOAD, QUALITATIVE'
 
 parameter "Measurement Period" Interval<DateTime>
-	default Interval[@2019-01-01T00:00:00.0, @2020-01-01T00:00:00.0)
 
 context Patient
 
@@ -25,6 +24,7 @@ define "Viral Load Test":
 	( [Observation: "Viral Load Quantitative"]
 		union [Observation: "Viral Load Qualitative"] ) o
 		where o.status in {'final', 'amended', 'corrected'}
+		and o.effective in "Measurement Period"
 
 define "Initial Population":
 	exists "Viral Load Test"
