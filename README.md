@@ -1,6 +1,6 @@
 # PLIR CQL Library files
 
-Tgis repository contains the sample PLIR cql librarry and measure for PLIR
+This repository contains the sample PLIR cql library Reaource and measure Respurce for Calculation of TX_PVLS indicator for PLIR
 
 NOTE : before you run the query below ,  **PUT** the Resources under the `files directory` to the `HAPI FHIR server` with their respective Resource id ie 
 
