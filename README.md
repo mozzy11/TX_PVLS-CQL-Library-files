@@ -6,8 +6,8 @@ NOTE : before you run the query below ,  **PUT** the Resources under the `files 
 
     PUT : FHIR-BASE_URL/Library/TX-PVLS 
 
-see files/tx_pvls.cql for the cql Logic used encoded in the TX-PVLS LIbrary
+see `files/tx_pvls.cql` for the cql Logic encoded in the TX-PVLS LIbrary
 
-sample query
+run a sample query for the measure evaluation ie
 
     http://localhost:8080/fhir/Measure/TX-PVLS/$evaluate-measure?periodStart=2019-01-01&periodEnd=2019-12-31
