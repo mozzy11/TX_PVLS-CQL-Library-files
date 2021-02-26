@@ -22,20 +22,18 @@ define "Denominator":
 define "Numerator":
 	exists "Viral Load Suppresed"
 
-define "Viral Load Test":
+define "Viral Load Check":
 	( [Observation: "Viral Load Quantitative"]
 		union [Observation: "Viral Load Qualitative"] ) o
 		where o.status in {'final', 'amended', 'corrected'}
 		and o.effective in day of "Measurement Period"
 
 define "Viral Load Suppresed":
-	( [Observation: "Viral Load Quantitative"]
-		union [Observation: "Viral Load Qualitative"] ) o
-		where o.status in {'final', 'amended', 'corrected'}
-		and o.effective in day of "Measurement Period"
-		and (o.value as Quantity)  <= 1000		
+	   "Viral Load Check" v where (v.value as Quantity)  <= 1000
+	   	or v.value.coding[1]= "Viral Load Qualitative Value"
+		or v.value.coding[2]= "Viral Load Qualitative Value"   
 
 define "Initial Population":
-	exists "Viral Load Test"
+	exists "Viral Load Check"
 		
 

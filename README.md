@@ -8,6 +8,12 @@ NOTE : before you run the query below ,  **PUT** the Resources under the `files 
 
 see `files/tx_pvls.cql` for the cql Logic encoded in the TX-PVLS LIbrary
 
-run a sample query for the measure evaluation ie
+To evalutae the TX_PVLS Measure resource for TX_PVLS indicator calculation ,
 
-    http://localhost:8080/fhir/Measure/TX-PVLS/$evaluate-measure?periodStart=2019-01-01&periodEnd=2019-12-31
+
+    GET: http://localhost:8080/fhir/Measure/TX-PVLS/$evaluate-measure?periodStart=2021-01-01&periodEnd=2021-12-31
+
+
+To evalutae the TX_PVLS Measure resource for generating the dataset for the Indicator , 
+
+    GET: http://localhost:8080/fhir/Measure/TX-PVLS/$collect-data?periodStart=2021-01-01&periodEnd=2021-12-31
