@@ -211,7 +211,7 @@
     {
       "resource": {
         "resourceType": "Observation",
-        "id": "b173843e-12d7-4c7a-b02d-7a1637c008cb",
+        "id": "b173843e-12d7-4c7a-b02d-7a1637c008xx",
         "status": "final",
         "category": [
           {
@@ -250,6 +250,104 @@
         "issued": "2021-01-26T08:11:12.000+00:00",
         "valueQuantity": {
           "value": 23
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "b173843e-12d7-4c7a-b02d-7a1637c008yy",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "856AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "HIV viral load"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "856",
+              "display": "HIV viral load"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/337679e5-aae4-4d95-8583-758e6551b953",
+          "type": "Patient",
+          "display": "Obs_Test1 Obs_Test1 Obs_Test1 (OpenMRS ID: 10000X)"
+        },
+        "encounter": {
+          "reference": "Encounter/4b91bc4f-9eef-4144-a88f-d8998ae932cf",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2021-01-26T08:11:12+00:00",
+        "issued": "2021-01-26T08:11:12.000+00:00",
+        "valueQuantity": {
+          "value": 23
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "b173843e-12d7-4c7a-b02d-7a1637c008cz",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory",
+                "display": "Laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "856AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "display": "HIV viral load"
+            },
+            {
+              "system": "https://openconceptlab.org/orgs/CIEL/sources/CIEL",
+              "code": "856",
+              "display": "HIV viral load"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/337679e5-aae4-4d95-8583-758e6551b9xx",
+          "type": "Patient",
+          "display": "Obs_Test1 Obs_Test1 Obs_Test1 (OpenMRS ID: 10000X)"
+        },
+        "encounter": {
+          "reference": "Encounter/4b91bc4f-9eef-4144-a88f-d8998ae932cf",
+          "type": "Encounter"
+        },
+        "effectiveDateTime": "2021-01-26T08:11:12+00:00",
+        "issued": "2021-01-26T08:11:12.000+00:00",
+        "valueQuantity": {
+          "value": 2000
         }
       },
       "request": {

@@ -13,7 +13,10 @@ To evalutae the TX_PVLS Measure resource for TX_PVLS indicator calculation ,
 
     GET: http://localhost:8080/fhir/Measure/TX-PVLS/$evaluate-measure?periodStart=2021-01-01&periodEnd=2021-12-31
 
+see file for a sample resultset `files/example_results/evaluated_measure_report.json`
 
 To evalutae the TX_PVLS Measure resource for generating the dataset for the Indicator , 
 
     GET: http://localhost:8080/fhir/Measure/TX-PVLS/$collect-data?periodStart=2021-01-01&periodEnd=2021-12-31
+
+see file for a sample resultset    `files/example_results/collect-data-results.json`
