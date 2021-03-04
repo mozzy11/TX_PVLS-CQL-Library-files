@@ -2,7 +2,7 @@
     "resourceType": "Library",
     "id": "TX-PVLS",
     "url": "http://fhir.org/plir/Library/TX-PVLS",
-    "version": "2.10.000",
+    "version": "0.0.1",
     "name": "TX_PVLS",
     "status": "draft",
     "experimental": true,
@@ -46,7 +46,14 @@
             "type": "boolean"
         },
         {
-            "name": "HIV Test Performed",
+            "name": "Viral Load Check",
+            "use": "out",
+            "min": 0,
+            "max": "*",
+            "type": "Observation"
+        },
+         {
+            "name": "Viral Load Suppresed",
             "use": "out",
             "min": 0,
             "max": "*",
@@ -63,7 +70,7 @@
     "content": [
         {
             "contentType": "text/cql",
-            "data": "bGlicmFyeSBUWF9QVkxTIHZlcnNpb24gJzIuMTAuMDAwJwoKdXNpbmcgRkhJUiB2ZXJzaW9uICc0LjAuMScKCmluY2x1ZGUgRkhJUkhlbHBlcnMgdmVyc2lvbiAnNC4wLjEnIGNhbGxlZCBGSElSSGVscGVycwoKY29kZXN5c3RlbSAiQ0lFTCI6ICdodHRwczovL29wZW5jb25jZXB0bGFiLm9yZy9vcmdzL0NJRUwvc291cmNlcy9DSUVMJwoKY29kZSAiVmlyYWwgTG9hZCBRdWFudGl0YXRpdmUiOiAnODU2JyBmcm9tICJDSUVMIiBkaXNwbGF5ICdISVYgdmlyYWwgbG9hZCcKCmNvZGUgIlZpcmFsIExvYWQgUXVhbGl0YXRpdmUiOiAnMTMwNScgZnJvbSAiQ0lFTCIgZGlzcGxheSAnSElWIFZJUkFMIExPQUQsIFFVQUxJVEFUSVZFJwoKY29kZSAiVmlyYWwgTG9hZCBRdWFsaXRhdGl2ZSBWYWx1ZSI6ICcxMzA2JyBmcm9tICJDSUVMIiBkaXNwbGF5ICdCRVlPTkQgREVURUNUQUJMRSBMSU1JVCcKCnBhcmFtZXRlciAiTWVhc3VyZW1lbnQgUGVyaW9kIiBJbnRlcnZhbDxEYXRlVGltZT4KCmNvbnRleHQgUGF0aWVudAoKZGVmaW5lICJEZW5vbWluYXRvciI6CgkiSW5pdGlhbCBQb3B1bGF0aW9uIgoKZGVmaW5lICJOdW1lcmF0b3IiOgoJZXhpc3RzICJWaXJhbCBMb2FkIFN1cHByZXNlZCIKCmRlZmluZSAiVmlyYWwgTG9hZCBDaGVjayI6CgkoIFtPYnNlcnZhdGlvbjogIlZpcmFsIExvYWQgUXVhbnRpdGF0aXZlIl0KCQl1bmlvbiBbT2JzZXJ2YXRpb246ICJWaXJhbCBMb2FkIFF1YWxpdGF0aXZlIl0gKSBvCgkJd2hlcmUgby5zdGF0dXMgaW4geydmaW5hbCcsICdhbWVuZGVkJywgJ2NvcnJlY3RlZCd9CgkJYW5kIG8uZWZmZWN0aXZlIGluIGRheSBvZiAiTWVhc3VyZW1lbnQgUGVyaW9kIgoKZGVmaW5lICJWaXJhbCBMb2FkIFN1cHByZXNlZCI6CgkgICAiVmlyYWwgTG9hZCBDaGVjayIgdiB3aGVyZSAodi52YWx1ZSBhcyBRdWFudGl0eSkgIDw9IDEwMDAKCSAgIAlvciB2LnZhbHVlLmNvZGluZ1sxXT0gIlZpcmFsIExvYWQgUXVhbGl0YXRpdmUgVmFsdWUiCgkJb3Igdi52YWx1ZS5jb2RpbmdbMl09ICJWaXJhbCBMb2FkIFF1YWxpdGF0aXZlIFZhbHVlIiAgIAoKZGVmaW5lICJJbml0aWFsIFBvcHVsYXRpb24iOgoJZXhpc3RzICJWaXJhbCBMb2FkIENoZWNrIgoJCQoK"
+            "data": "bGlicmFyeSBUWF9QVkxTIHZlcnNpb24gJzAuMC4xJwoKdXNpbmcgRkhJUiB2ZXJzaW9uICc0LjAuMScKCmluY2x1ZGUgRkhJUkhlbHBlcnMgdmVyc2lvbiAnNC4wLjEnIGNhbGxlZCBGSElSSGVscGVycwoKY29kZXN5c3RlbSAiQ0lFTCI6ICdodHRwczovL29wZW5jb25jZXB0bGFiLm9yZy9vcmdzL0NJRUwvc291cmNlcy9DSUVMJwoKY29kZSAiVmlyYWwgTG9hZCBRdWFudGl0YXRpdmUiOiAnODU2JyBmcm9tICJDSUVMIiBkaXNwbGF5ICdISVYgdmlyYWwgbG9hZCcKCmNvZGUgIlZpcmFsIExvYWQgUXVhbGl0YXRpdmUiOiAnMTMwNScgZnJvbSAiQ0lFTCIgZGlzcGxheSAnSElWIFZJUkFMIExPQUQsIFFVQUxJVEFUSVZFJwoKY29kZSAiVmlyYWwgTG9hZCBRdWFsaXRhdGl2ZSBWYWx1ZSI6ICcxMzA2JyBmcm9tICJDSUVMIiBkaXNwbGF5ICdCRVlPTkQgREVURUNUQUJMRSBMSU1JVCcKCnBhcmFtZXRlciAiTWVhc3VyZW1lbnQgUGVyaW9kIiBJbnRlcnZhbDxEYXRlVGltZT4KCmNvbnRleHQgUGF0aWVudAoKZGVmaW5lICJEZW5vbWluYXRvciI6CgkiSW5pdGlhbCBQb3B1bGF0aW9uIgoKZGVmaW5lICJOdW1lcmF0b3IiOgoJZXhpc3RzICJWaXJhbCBMb2FkIFN1cHByZXNlZCIKCmRlZmluZSAiVmlyYWwgTG9hZCBDaGVjayI6CgkoIFtPYnNlcnZhdGlvbjogIlZpcmFsIExvYWQgUXVhbnRpdGF0aXZlIl0KCQl1bmlvbiBbT2JzZXJ2YXRpb246ICJWaXJhbCBMb2FkIFF1YWxpdGF0aXZlIl0gKSBvCgkJd2hlcmUgby5zdGF0dXMgaW4geydmaW5hbCcsICdhbWVuZGVkJywgJ2NvcnJlY3RlZCd9CgkJYW5kIG8uZWZmZWN0aXZlIGluIGRheSBvZiAiTWVhc3VyZW1lbnQgUGVyaW9kIgoKZGVmaW5lICJWaXJhbCBMb2FkIFN1cHByZXNlZCI6CgkgICAiVmlyYWwgTG9hZCBDaGVjayIgdiB3aGVyZSAodi52YWx1ZSBhcyBRdWFudGl0eSkgIDw9IDEwMDAKCSAgIAlvciB2LnZhbHVlLmNvZGluZ1sxXT0gIlZpcmFsIExvYWQgUXVhbGl0YXRpdmUgVmFsdWUiCgkJb3Igdi52YWx1ZS5jb2RpbmdbMl09ICJWaXJhbCBMb2FkIFF1YWxpdGF0aXZlIFZhbHVlIiAgIAoKZGVmaW5lICJJbml0aWFsIFBvcHVsYXRpb24iOgoJZXhpc3RzICJWaXJhbCBMb2FkIENoZWNrIg=="
         }
     ]
 }

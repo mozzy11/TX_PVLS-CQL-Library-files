@@ -1,4 +1,4 @@
-library TX_PVLS version '2.10.000'
+library TX_PVLS version '0.0.1'
 
 using FHIR version '4.0.1'
 
@@ -35,5 +35,3 @@ define "Viral Load Suppresed":
 
 define "Initial Population":
 	exists "Viral Load Check"
-		
-
