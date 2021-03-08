@@ -29,7 +29,7 @@ define "Viral Load Check":
 		and o.effective in day of "Measurement Period"
 
 define "Viral Load Suppresed":
-	   "Viral Load Check" v where (v.value as Quantity)  <= 1000
+	   "Viral Load Check" v where (v.value as Quantity)  < 1000
 	   	or v.value.coding[1]= "Viral Load Qualitative Value"
 		or v.value.coding[2]= "Viral Load Qualitative Value"   
 
